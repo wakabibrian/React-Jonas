@@ -9,3 +9,4 @@ useState is a function in react which returns an Array.
 # Creating a New React App
 
 Use: npx create-react-app project_name
+To Start: npm run start
