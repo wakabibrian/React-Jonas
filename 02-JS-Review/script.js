@@ -144,7 +144,7 @@ function getBook(id) {
 }
 
 //------------- Destructuring - Getting data out of an object or out of an array
-const book = getBook(2);
+const book = getBook(1);
 
 //--- objects
 // const title = book.title;
@@ -156,6 +156,47 @@ const { title, author, pages, publicationDate, genres } = book; // Use exact nam
 //--- Arrays
 // const primaryGenre = genres[0];
 // const secondaryGenre = genres[1];
-const [primaryGenre, secondaryGenre] = genres; //Gets First and second elements out of the array and assigns it to the defined variables
+// const [primaryGenre, secondaryGenre] = genres; //Gets First and second elements out of the array and assigns it to the defined variables
 
-console.log(primaryGenre, secondaryGenre);
+// console.log(primaryGenre, secondaryGenre);
+
+//------------- Rest/Spread Operator
+
+//--- Rest operator - Creating an array with other items not destructured
+
+const [primaryGenre, secondaryGenre, ...otherGenres] = genres; //Placed at the end of the destructuring operation
+
+console.log(primaryGenre, secondaryGenre, otherGenres);
+
+//--- Spread operator - Selects all items in the arrays/objects and adds a new one at the end
+
+// On Arrays
+// const newGenres = [...genres, "epic fantasy"];
+const newGenres = ["epic fantasy", ...genres]; // We can also place it at the end
+// newGenres;
+
+// On Objects
+const updatedBook = {
+    ...book,
+    //Adding a new property
+    moviePublicationDate: "2001-12-19",
+    // Overwriting an existing property
+    pages: 1210,
+};
+updatedBook;
+
+//------------- Template Literals - Create strings that contain JavaScript variables/any Javascript expression
+const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${
+    publicationDate.split("-")[0]
+}`;
+summary;
+
+//------------- Ternary Operator Instead of if/else Statements
+//Has 3 parts; condition,
+// result of the operation incase the condition is true,
+// result incase the condition is false
+const pagesRange = pages > 1000 ? "Over 1000" : "Less than 1000"; //You can also include it in template literals
+pagesRange;
+// console.log(`The book has ${pagesRange} pages`);
+
+//------------- Arrow Functions - New way of writing functions
