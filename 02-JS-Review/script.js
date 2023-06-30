@@ -144,7 +144,8 @@ function getBook(id) {
 }
 
 //------------- Destructuring - Getting data out of an object or out of an array
-const book = getBook(1);
+const book = getBook(2);
+book;
 
 //--- objects
 // const title = book.title;
@@ -200,3 +201,46 @@ pagesRange;
 // console.log(`The book has ${pagesRange} pages`);
 
 //------------- Arrow Functions - New way of writing functions
+// Helpful for writing quick and short 1 line functions
+
+//--- Old way - Preferred for longer functions
+function getYear(str) {
+    return str.split("-")[0];
+}
+console.log(getYear(publicationDate));
+
+//--- Arrow functions - Preferred for shorter, 1-liner functions
+const getYearArrow = (str) => str.split("-")[0];
+console.log(getYearArrow(publicationDate));
+
+//------------- Short-Circuiting And Logical Operators: &&, ||, ??
+// Short-Circuiting means that in some certain conditions, the operator will immediately return the first value and not even look at the second value
+
+//--- && (and) operator - short-circuits when the first value is false (immediately returns that first value)
+console.log(true && "some string"); // No short-circuit because the first value is true
+console.log(false && "some string"); //Short-circuit because the first value is false
+// Example
+console.log(book.hasMovieAdaptation && "This book has a movie");
+
+//falsy value: 0, "", null, undefined
+console.log("wakabi" && "Some string"); // No short circuiting because it is a truthy value
+console.log(0 && "Some string"); // Short circuits because it is a falsy value
+
+//--- || (or) operator - short-circuits when the first value is true (immediately returns that first value)
+console.log(true || "Some string"); // Short-circuit because the first value is true
+console.log(false || "Some string"); // No short-circuit because the first value is false
+
+// Example, setting default values
+console.log(book.translations.spanish);
+const spanishTranslation = book.translations.spanish || "NOT TRANSLATED";
+spanishTranslation;
+
+// The above  works for all falsy values even (including) 0 which might have consequences
+console.log(book.reviews.librarything.reviewsCount);
+const countWrong = book.reviews.librarything.reviewsCount || "no data";
+countWrong; // We want count to be 0 and not "no data" hence we use ?? operator
+
+//--- ?? (nullish coalescing operator) operator - It works very simillary as the || operator (only for null or undefined)
+//but doesnot for 0 or ""....
+const count = book.reviews.librarything.reviewsCount ?? "no data";
+count;
