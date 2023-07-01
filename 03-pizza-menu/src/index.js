@@ -49,7 +49,22 @@ const pizzaData = [
 function App() {
     return (
         <div>
-            <h1>Hello React!</h1>
+            <Header />
+            <Menu />
+            <Footer />
+        </div>
+    );
+}
+
+function Header() {
+    return <h1>Fast React Pizza Co.</h1>;
+}
+
+function Menu() {
+    return (
+        <div>
+            <h2>Our menu</h2>
+            <Pizza />
             <Pizza />
             <Pizza />
             <Pizza />
@@ -57,11 +72,28 @@ function App() {
     );
 }
 
+function Footer() {
+    const hour = new Date().getHours();
+    const openHour = 12;
+    const closeHour = 22;
+    const isOpen = hour >= openHour && hour <= closeHour;
+    console.log(isOpen);
+
+    // if (hour >= openHour && hour <= closeHour) alert("We are currently open!");
+    // else alert("Sorry we are closed");
+
+    return (
+        <footer>{new Date().toLocaleTimeString()}. We're currently open</footer>
+    );
+
+    // return React.createElement("footer", null, "We're currently open"); //Without jsx
+}
+
 function Pizza() {
     return (
         <div>
             <img src="pizzas/spinaci.jpg" alt="Pizza Spinaci" />
-            <h2>Pizza Spinaci</h2>;
+            <h2>Pizza Spinaci</h2>
             <p>Tomato, mozarella, spinach, and ricotta cheese</p>
         </div>
     );

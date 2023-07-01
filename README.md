@@ -61,3 +61,13 @@ I learn't;
 -   Call/nest/include the created function (component) inside App component
 -   Each component can return exactly one element
 -   You can reuse components by using it several times
+
+## 5. What is JSX?
+
+-   Details in the Pdf
+
+## 5.JavaScript Logic in Components
+
+-   Use {} to include JavaScript
+
+## 6. Separation of Concerns
