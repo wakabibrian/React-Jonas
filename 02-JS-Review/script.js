@@ -293,3 +293,23 @@ const adventureBooks = books
     .map((book) => book.title);
 
 adventureBooks;
+
+//--- The Array reduce Method: The goal is to reduce the array to one value
+// e.g adding all pages of all books.
+const pagesAllBooks = books.reduce((acc, book) => acc + book.pages, 0);
+pagesAllBooks;
+
+//------------- The Array sort Method: Used to sort an array
+const arr = [3, 7, 1, 9, 6];
+// const sorted = arr.sort((a, b) => a - b); // Sorting in ascending way
+// const sorted = arr.sort((a, b) => b - a); // Sorting in descending way
+// sorted;
+// arr; //arr also sorted - This is a method that mutates (changes) the original array, unlike map, filter and reduce.
+// Always first take a copy of the original array to avoid mutating the array
+
+const sorted = arr.slice().sort((a, b) => b - a); // Sorting in descending way
+sorted;
+arr; //arr not sorted
+
+const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages); // Sorted in descending
+sortedByPages;
