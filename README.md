@@ -6,7 +6,7 @@ Components/the functions return JSX.
 In a react, we update a state with useState
 useState is a function in react which returns an Array.
 
-# Creating a New React App
+### Creating a New React App
 
 Use: npx create-react-app project_name
 To Start: npm start
@@ -71,3 +71,10 @@ I learn't;
 -   Use {} to include JavaScript
 
 ## 6. Separation of Concerns
+
+-   Why React built on components: Why we have html, css and JS coupled together.
+-   Details in the Pdf
+-   React's separation of concerns is per component, not per technology e.g html, js and cs.
+-   Each component has its own data, logic and appearance (html, css and js mixed up in one component)
+
+## 7. Styling React Applications
