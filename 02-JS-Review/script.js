@@ -66,7 +66,7 @@ const data = [
         publicationDate: "1965-01-01",
         author: "Frank Herbert",
         genres: ["science fiction", "novel", "adventure"],
-        hasMovieAdaptation: true,
+        hasMovieAdaptation: false,
         pages: 658,
         translations: {
             spanish: "",
@@ -144,6 +144,7 @@ function getBook(id) {
 }
 
 //------------- Destructuring - Getting data out of an object or out of an array
+/*
 const book = getBook(3);
 book;
 
@@ -253,3 +254,42 @@ function getTotalReviewCount(book) {
 }
 
 console.log(getTotalReviewCount(book));
+*/
+
+//------------- Functional Array Methods: map, filter and reduce: return a new array based on the original one
+//--- The Array map Method: Loops over an array and return a new array with some operation applied to each elements of the original array
+const books = getBooks();
+
+function getTotalReviewCount(book) {
+    const goodreads = book.reviews?.goodreads?.reviewsCount;
+    const librarything = book.reviews?.librarything?.reviewsCount ?? 0;
+    return goodreads + librarything;
+}
+
+const x = [1, 2, 3, 4, 5].map((el) => el * 2);
+x;
+
+const title = books.map((book) => book.title);
+title;
+
+const essentialData = books.map((book) => ({
+    title: book.title,
+    author: book.author,
+    reviewsCount: getTotalReviewCount(book),
+}));
+
+essentialData;
+
+//--- The Array filter Method: Filtering out some elements of the array based on a condition
+// e.g creating an array with only books of more than 500 pages
+
+const longBooksWithMovie = books
+    .filter((book) => book.pages > 500)
+    .filter((book) => book.hasMovieAdaptation);
+longBooksWithMovie;
+
+const adventureBooks = books
+    .filter((book) => book.genres.includes("adventure"))
+    .map((book) => book.title);
+
+adventureBooks;
