@@ -97,3 +97,23 @@ To style with inline;
 To style with external css;
 
 -   Use className, not class!
+
+## 8. Passing and Receiving Props
+
+-   Prop stand for property
+-   Props is how we pass data between components from parent components to child components
+-   It is a communication channel between a parent and a child component
+
+Steps;
+
+1.  We pass props into the component
+
+    -   Pass them as attributes
+
+2.  We receive the props in the component that we pass them into
+    -   Accept a props parameter. Props is an object with all the props that were passed
+    -   Remove the props from their objects
+
+## 9. Props, Immutability, and One-Way Data Flow
+
+-   Details in the Pdf
