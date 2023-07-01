@@ -34,3 +34,9 @@ Learnt;
 -   Working With Immutable Arrays: Arrays which are not changed or manipulated
 -   Asynchronous JavaScript: Promises; fetching/loading data from an external web api
 -   Asynchronous JavaScript: Async/Await; fetching/loading data from an external web api
+
+# Section 3: Working With Components, Props and JSX
+
+I learn't;
+
+-   Rendering the Root Component and Strict Mode
