@@ -41,7 +41,7 @@ I learn't;
 
 ## 1. Rendering the Root Component and Strict Mode
 
-## 2. Debugging:
+## 2. Debugging
 
 -   Always make sure the application is running
     -   To start: _npm start_
@@ -49,4 +49,8 @@ I learn't;
 -   Always keep the terminal open and console in the dev tools (browser) to help track errors
 -   Always work with ESLint (Warnings indicated during development e.g declaration of variables but never used)
 
-## 3. Components as Building Blocks:
+## 3. Components as Building Blocks
+
+-   Details in the Pdf
+
+## 4. Creating And Reusing a Component
