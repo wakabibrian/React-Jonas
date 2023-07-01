@@ -78,3 +78,22 @@ I learn't;
 -   Each component has its own data, logic and appearance (html, css and js mixed up in one component)
 
 ## 7. Styling React Applications
+
+In React you can use;
+
+-   Inline styling,
+-   External css files,
+-   Css modules,
+-   Tailwind css
+-   css saas etc
+
+To style with inline;
+
+-   use style attribute, enter js mode with {}, and then inside {}, use an object for the required style {color: "red"}
+-   Always use cammelCase notation
+-   e.g style={{ color: "red", fontSize: "32px" }}
+-   But always include an external css file
+
+To style with external css;
+
+-   Use className, not class!
