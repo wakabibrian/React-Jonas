@@ -341,3 +341,11 @@ booksAfterUpdate;
 */
 
 //------------- Asynchronous JavaScript: Promises;  fetching/loading data from an external web api
+// fetch("https://jsonplaceholder.typicode.com/todos"); //This returns a promise
+fetch("https://jsonplaceholder.typicode.com/todos")
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+
+console.log("Wakabi");
+
+//------------- Asynchronous JavaScript: Async/Await;  fetching/loading data from an external web api
