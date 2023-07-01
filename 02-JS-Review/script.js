@@ -144,7 +144,7 @@ function getBook(id) {
 }
 
 //------------- Destructuring - Getting data out of an object or out of an array
-const book = getBook(2);
+const book = getBook(3);
 book;
 
 //--- objects
@@ -236,11 +236,20 @@ const spanishTranslation = book.translations.spanish || "NOT TRANSLATED";
 spanishTranslation;
 
 // The above  works for all falsy values even (including) 0 which might have consequences
-console.log(book.reviews.librarything.reviewsCount);
-const countWrong = book.reviews.librarything.reviewsCount || "no data";
-countWrong; // We want count to be 0 and not "no data" hence we use ?? operator
+// console.log(book.reviews.librarything.reviewsCount);
+// const countWrong = book.reviews.librarything.reviewsCount || "no data";
+// countWrong; // We want count to be 0 and not "no data" hence we use ?? operator
 
-//--- ?? (nullish coalescing operator) operator - It works very simillary as the || operator (only for null or undefined)
-//but doesnot for 0 or ""....
-const count = book.reviews.librarything.reviewsCount ?? "no data";
-count;
+// //--- ?? (nullish coalescing operator) operator - It works very simillary as the || operator (only for null or undefined)
+// //but doesnot for 0 or ""....
+// const count = book.reviews.librarything.reviewsCount ?? "no data";
+// count;
+
+//------------- Optional Chaining (?.) - ignore the undefined values (ignore the next variables incase what comes before is undefined or not available )
+function getTotalReviewCount(book) {
+    const goodreads = book.reviews?.goodreads?.reviewsCount;
+    const librarything = book.reviews?.librarything?.reviewsCount ?? 0;
+    return goodreads + librarything;
+}
+
+console.log(getTotalReviewCount(book));
