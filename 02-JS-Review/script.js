@@ -256,6 +256,7 @@ function getTotalReviewCount(book) {
 console.log(getTotalReviewCount(book));
 */
 
+/*
 //------------- Functional Array Methods: map, filter and reduce: return a new array based on the original one
 //--- The Array map Method: Loops over an array and return a new array with some operation applied to each elements of the original array
 const books = getBooks();
@@ -313,3 +314,30 @@ arr; //arr not sorted
 
 const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages); // Sorted in descending
 sortedByPages;
+
+//------------- Working With Immutable Arrays: Arrays which are not changed or manipulated
+// How to add elements, how to delete elements, how to update elements without changing the original array
+
+// 1) Add a book object to array (use spread operator)
+const newBook = {
+    id: 6,
+    title: "Harry Potter and the Chamber of Secretes",
+    author: "J. K. Rowling",
+};
+
+const booksAfterAdd = [...books, newBook];
+booksAfterAdd;
+
+// 2) Deleting a book object from a array (use filter)
+const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
+booksAfterDelete;
+
+// 3) Update a book object in the array (Use map)
+const booksAfterUpdate = booksAfterDelete.map((book) =>
+    book.id === 1 ? { ...book, pages: 1210 } : book
+);
+
+booksAfterUpdate;
+*/
+
+//------------- Asynchronous JavaScript: Promises;  fetching/loading data from an external web api
