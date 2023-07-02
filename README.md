@@ -177,3 +177,7 @@ Steps;
 -   Then we specify a function value. Do not call a function
 -   We create the event handler function in the component, and pass it in the event handler
 -   For event handlers, always create a function handle... e.g handlePrevious, handleNext
+
+## 3. What is State in React?
+
+Details in pdf
