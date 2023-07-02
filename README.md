@@ -166,3 +166,5 @@ Steps;
 -   For Classes; use template literal but in javascript mode
 
 # Section 4: STATE, EVENTS, AND FORMS: INTERACTIVE COMPONENTS
+
+## 1. Let's Build a Steps Component
