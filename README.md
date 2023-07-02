@@ -133,3 +133,9 @@ Steps;
 
 -   Conditional rendering is rendering some piece of the UI based on a certain condition
 -   && short circuiting - if the condition (first) is falsy, then the second part wont be executed
+
+## 13. Conditional Rendering With Ternaries
+
+-   Ternary operator has 3 parts; condition, true, and false parts
+-   The advantage of using a ternary operator is we can display some alternative
+-   We can not simply use an if else statement because of the rules of JSX. Inside JS mode we can not write simply javascript. We can write something which produces a value
