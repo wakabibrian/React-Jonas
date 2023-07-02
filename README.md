@@ -167,4 +167,13 @@ Steps;
 
 # Section 4: STATE, EVENTS, AND FORMS: INTERACTIVE COMPONENTS
 
-## 1. Let's Build a Steps Component
+## 1. Build a Steps Component
+
+## 2. Handling Events the React Way
+
+-   This replaces the vanilla JS addEventListener method (Imperative way of building UIs)
+-   We listen for events right on the element where they will happen; We specify an event listener function directly on the element.
+-   Some react event handlers; onClick, onMouseEnter
+-   Then we specify a function value. Do not call a function
+-   We create the event handler function in the component, and pass it in the event handler
+-   For event handlers, always create a function handle... e.g handlePrevious, handleNext
