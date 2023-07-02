@@ -117,3 +117,19 @@ Steps;
 ## 9. Props, Immutability, and One-Way Data Flow
 
 -   Details in the Pdf
+
+## 10. The Rules of JSX
+
+-   Details in the Pdf
+
+## 11. Rendering Lists
+
+-   Rendering a list is when you have an array and you want to create one component of the array.
+-   Rendering them dynamically
+-   Use the map method
+-   With map method, always pass in the key... with something unique
+
+## 12. Conditional Rendering With &&
+
+-   Conditional rendering is rendering some piece of the UI based on a certain condition
+-   && short circuiting - if the condition (first) is falsy, then the second part wont be executed
