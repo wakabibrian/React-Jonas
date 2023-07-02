@@ -145,3 +145,5 @@ Steps;
 -   JSX can have multiple returns based on a condition.
 -   You can use any JavaScript like the if else since we are outside JSX
 -   Useful when rendering the entire component conditionally but not pieces of JSX
+
+## 15. Extracting JSX Into a New Component
