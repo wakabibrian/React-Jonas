@@ -164,3 +164,5 @@ Steps;
 
 -   For Text; Already know the element, but not the content/Text
 -   For Classes; use template literal but in javascript mode
+
+# Section 4: STATE, EVENTS, AND FORMS: INTERACTIVE COMPONENTS
