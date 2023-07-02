@@ -181,3 +181,18 @@ Steps;
 ## 3. What is State in React?
 
 Details in pdf
+
+## 4. Creating a State Variable With useState
+
+To use state in the component, we follow these 3 steps;
+
+-   We add a new state variable (we use the useState() function from react)
+-   Then we use it in the code; in JSX
+-   Then we update the piece of state in some event handler
+
+-   useState() function takes in the default value of the state variable as an argument
+-   The function returns an array with a default value of the state and a function we can use to update the state variable
+-   useState() function is a hook because it starts with use. We can only call hooks on the top level of the function. Not inside an if statement, or inside another function or any other loop
+-   We should update the state using the setter function, not manually
+
+## 5. Don't Set State Manually!
