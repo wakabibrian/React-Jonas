@@ -147,3 +147,8 @@ Steps;
 -   Useful when rendering the entire component conditionally but not pieces of JSX
 
 ## 15. Extracting JSX Into a New Component
+
+## 16. Destructuring Props
+
+-   Avoiding writing props. ....
+-   Helps to know which props the component will receive
