@@ -196,3 +196,5 @@ To use state in the component, we follow these 3 steps;
 -   We should update the state using the setter function, not manually
 
 ## 5. Don't Set State Manually!
+
+-   The setter function updates the state automatically without mutating the function
