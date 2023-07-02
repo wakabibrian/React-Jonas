@@ -152,3 +152,10 @@ Steps;
 
 -   Avoiding writing props. ....
 -   Helps to know which props the component will receive
+
+## 17. React Fragments
+
+-   A React Fragment basically lets us group some elements without leaving any trace in the html tree/ in the Dom
+-   use <></>
+-   It allows us have more than one element inside a piece of JSX
+-   When we are rendering a list, we need a key, so we use <React.Fragment key={key}></React.Fragment>
