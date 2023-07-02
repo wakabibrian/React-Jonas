@@ -139,3 +139,9 @@ Steps;
 -   Ternary operator has 3 parts; condition, true, and false parts
 -   The advantage of using a ternary operator is we can display some alternative
 -   We can not simply use an if else statement because of the rules of JSX. Inside JS mode we can not write simply javascript. We can write something which produces a value
+
+## 14. Conditional Rendering With Multiple Returns
+
+-   JSX can have multiple returns based on a condition.
+-   You can use any JavaScript like the if else since we are outside JSX
+-   Useful when rendering the entire component conditionally but not pieces of JSX
