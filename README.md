@@ -159,3 +159,8 @@ Steps;
 -   use <></>
 -   It allows us have more than one element inside a piece of JSX
 -   When we are rendering a list, we need a key, so we use <React.Fragment key={key}></React.Fragment>
+
+## 18. Setting Classes and Text Conditionally
+
+-   For Text; Already know the element, but not the content/Text
+-   For Classes; use template literal but in javascript mode
