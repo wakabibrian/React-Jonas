@@ -203,3 +203,7 @@ To use state in the component, we follow these 3 steps;
 
 -   React reacts to state changes by re-rendering the UI
 -   Details in the pdf
+
+## 7. Adding Another Piece of State
+
+-   State is like memory... it remembers its state even if we re-render again and again
