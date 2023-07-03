@@ -207,3 +207,10 @@ To use state in the component, we follow these 3 steps;
 ## 7. Adding Another Piece of State
 
 -   State is like memory... it remembers its state even if we re-render again and again
+
+## 8. React Developer Tools
+
+-   The react team built dev tools specific for react.
+-   Install the react dev tools extension.
+-   Components tab... for showing component tree
+-   You can use the components tab to test different values for state
