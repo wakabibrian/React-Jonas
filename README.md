@@ -198,3 +198,8 @@ To use state in the component, we follow these 3 steps;
 ## 5. Don't Set State Manually!
 
 -   The setter function updates the state automatically without mutating the function
+
+## 6. The Mechanics of State
+
+-   React reacts to state changes by re-rendering the UI
+-   Details in the pdf
