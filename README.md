@@ -221,3 +221,8 @@ To use state in the component, we follow these 3 steps;
 -   Always pass in the call back function (in the useState()), not just a value.
 -   The call back function will receive as an augment the current value of the state
 -   When we are not updating state based on the current state, e.g in objects, we can just pass in the new state value.
+
+## 10. More Thoughts About State + State Guidelines
+
+-   Each component manages its own state.
+-   Details in the pdf.
