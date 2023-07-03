@@ -226,3 +226,7 @@ To use state in the component, we follow these 3 steps;
 
 -   Each component manages its own state.
 -   Details in the pdf.
+
+## 12. A Vanilla JavaScript Implementation
+
+-   With vanilla JS we have imperative code, that tells step by step what to do. (Imperative DOM manipulation)
