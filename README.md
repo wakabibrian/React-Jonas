@@ -214,3 +214,10 @@ To use state in the component, we follow these 3 steps;
 -   Install the react dev tools extension.
 -   Components tab... for showing component tree
 -   You can use the components tab to test different values for state
+
+## 9. Updating State Based on Current State
+
+-   We should not update the state based on the current state just like before
+-   Always pass in the call back function (in the useState()), not just a value.
+-   The call back function will receive as an augment the current value of the state
+-   When we are not updating state based on the current state, e.g in objects, we can just pass in the new state value.
