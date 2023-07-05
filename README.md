@@ -230,3 +230,9 @@ To use state in the component, we follow these 3 steps;
 ## 12. A Vanilla JavaScript Implementation
 
 -   With vanilla JS we have imperative code, that tells step by step what to do. (Imperative DOM manipulation)
+
+## 13. Building a Form and Handling Submissions
+
+-   Forms are fundamental in web applications.
+-   We use the html <form> element.
+-   In Single Page Application, we can submit a form without the page reloading. Therefore we need to disable the default html behavior of reloading with e.preventDefault; where e is event passed in the handler function.
