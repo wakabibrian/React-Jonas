@@ -236,3 +236,17 @@ To use state in the component, we follow these 3 steps;
 -   Forms are fundamental in web applications.
 -   We use the html <form> element.
 -   In Single Page Application, we can submit a form without the page reloading. Therefore we need to disable the default html behavior of reloading with e.preventDefault; where e is event passed in the handler function.
+
+## 14. Controlled Elements
+
+-   The form inputs maintain their own state inside the dom/inside the html element, which makes it hard to read their values also leaves the state in the DOM.
+-   In react we always want to keep all the state in one central place; Inside the react application and not inside the DOM. Therefore we use a technic called controlled elements.
+-   In the Controlled elements technic, its react who controls and owns the state of the input fields and no longer the DOM.
+
+To implement the controlled elements technic, we follow 3 steps;
+
+1. We create a piece of state
+2. We use the state as a value of the input field
+3. Connect the state with the value, using the onChange prop
+
+-   For numbers in the state, always convert it Number before e.target.value
