@@ -16,16 +16,31 @@ function Counter() {
 
     date.setDate(date.getDate() + count);
 
+    function handleReset() {
+        setCount(0);
+        setStep(1);
+    }
+
     return (
         <>
             <div>
-                <button onClick={() => setStep((s) => s - 1)}>-</button>
+                <input
+                    type="range"
+                    value={step}
+                    min={0}
+                    max={10}
+                    onChange={(e) => setStep(Number(e.target.value))}
+                />
                 <span>Step: {step}</span>
-                <button onClick={() => setStep((s) => s + 1)}>+</button>
             </div>
             <div>
                 <button onClick={() => setCount((c) => c - step)}>-</button>
-                <span>Count: {count}</span>
+                <input
+                    type="text"
+                    placeholder="0"
+                    value={count}
+                    onChange={(e) => setCount(Number(e.target.value))}
+                />
                 <button onClick={() => setCount((c) => c + step)}>+</button>
             </div>
             <p>
@@ -37,6 +52,12 @@ function Counter() {
                 {count < 0 &&
                     `${Math.abs(count)} days ago was ${date.toDateString()}`}
             </p>
+
+            {count !== 0 || step !== 1 ? (
+                <div>
+                    <button onClick={handleReset}>Reset</button>
+                </div>
+            ) : null}
         </>
     );
 }

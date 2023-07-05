@@ -254,3 +254,5 @@ To implement the controlled elements technic, we follow 3 steps;
 ## 15. State vs. Props
 
 -   Details in the pdf
+
+Challenge
