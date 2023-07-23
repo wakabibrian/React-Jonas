@@ -41,6 +41,9 @@ I learn't;
 
 ## 1. Rendering the Root Component and Strict Mode
 
+Always the entry point should be index.js
+Strict mode will render our component twice inorder to find all bugs.
+
 ## 2. Debugging
 
 -   Always make sure the application is running
