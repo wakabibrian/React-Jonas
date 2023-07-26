@@ -96,7 +96,7 @@ To style with inline;
 -   use style attribute, enter js mode with {}, and then inside {}, use an object for the required style {color: "red"}
 -   Always use cammelCase notation
 -   e.g style={{ color: "red", fontSize: "32px" }}
--   But always include an external css file
+-   But always include an external css file.
 
 To style with external css;
 
