@@ -58,12 +58,13 @@ Strict mode will render our component twice inorder to find all bugs.
 
 ## 4. Creating And Reusing a Component
 
--   We write new components using function
+-   We write new components using functions
 -   The function needs to start with uppercase letter
 -   The function needs to return a markup in the form of JSX
 -   Call/nest/include the created function (component) inside App component
 -   Each component can return exactly one element
 -   You can reuse components by using it several times
+-   All assets are put in the public folder
 
 ## 5. What is JSX?
 
