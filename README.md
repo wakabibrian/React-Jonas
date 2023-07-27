@@ -110,11 +110,11 @@ To style with external css;
 
 Steps;
 
-1.  We pass props into the component
+1.  We pass props into the component (In the parent component)
 
     -   Pass them as attributes
 
-2.  We receive the props in the component that we pass them into
+2.  We receive the props in the component that we pass them into (In the child component)
     -   Accept a props parameter. Props is an object with all the props that were passed
     -   Remove the props from their objects
 
