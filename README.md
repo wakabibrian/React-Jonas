@@ -137,6 +137,7 @@ Steps;
 
 -   Conditional rendering is rendering some piece of the UI based on a certain condition
 -   && short circuiting - if the condition (first) is falsy, then the second part wont be executed
+-   React doesnt render true or false (conditions) in the DOM
 
 ## 13. Conditional Rendering With Ternaries
 
