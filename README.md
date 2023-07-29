@@ -153,6 +153,8 @@ Steps;
 
 ## 15. Extracting JSX Into a New Component
 
+Helps when the JSX or component is becoming long.
+
 ## 16. Destructuring Props
 
 -   Avoiding writing props. ....
