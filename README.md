@@ -262,4 +262,21 @@ To implement the controlled elements technic, we follow 3 steps;
 
 -   Details in the pdf
 
-Challenge
+# Section 4: Thinking In React: State Management
+
+## What is "Thinking in React"?
+
+The "Thinking in React" process;
+
+1. Break the desired UI into components and establish the component tree
+2. Build a static version in React (Without state)
+3. Think about state:
+    - When to use state
+    - Types of state: global vs local
+    - Where to place each peace of state
+4. Establish how data flows into the application:
+    - One-way data flow
+    - Child-to-parent communication
+    - Accessing global state
+
+Steps 3 and 4 is state management
