@@ -280,3 +280,9 @@ The "Thinking in React" process;
     - Accessing global state
 
 Steps 3 and 4 is state management
+
+## Fundamentals of State Management
+
+Details in PDF
+
+## Thinking About State and Lifting State Up
