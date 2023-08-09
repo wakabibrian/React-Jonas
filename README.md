@@ -292,3 +292,12 @@ Lifting up state means placing a state in a component that is a parent (closest 
 ## Deleting an Item: More Child-to-Parent Communication!
 
 Filter method helps to filter out (delete) items from the array based on a condition
+
+## Updating an Item: Complex Immutable Data Operation
+
+Map method helps to loop through an array of items and return the same length of items
+
+## Derived State
+
+Derived state is state that is computed from an existing piece of state or from props
+Details in PDF
