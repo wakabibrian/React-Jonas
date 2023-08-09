@@ -288,3 +288,7 @@ Details in PDF
 ## Thinking About State and Lifting State Up
 
 Lifting up state means placing a state in a component that is a parent (closest common parent) of both components that need a piece of state that is question
+
+## Deleting an Item: More Child-to-Parent Communication!
+
+Filter method helps to filter out (delete) items from the array based on a condition
