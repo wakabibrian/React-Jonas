@@ -301,3 +301,9 @@ Map method helps to loop through an array of items and return the same length of
 
 Derived state is state that is computed from an existing piece of state or from props
 Details in PDF
+
+## The "children" Prop: Making a Reusable Button
+
+The children prop is a prop each react component automatically receives and the value of the children prop is exactly between the opening and the closing tag of the component
+
+More Details in the PDF
