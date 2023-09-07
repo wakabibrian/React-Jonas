@@ -307,3 +307,19 @@ Details in PDF
 The children prop is a prop each react component automatically receives and the value of the children prop is exactly between the opening and the closing tag of the component
 
 More Details in the PDF
+
+## Prop Drilling
+
+Prop Drilling means that we need to pass some prop through several nested child components inorder to get that data into some deeply nested components.
+Prop drilling is not the best solution if we have to pass props to really deep nested components.
+
+## Component Composition
+
+Component composition is combining different components using the children prop(or explicitly defined props)
+
+With Component composition we can create;
+
+-   Highly reusable and flexible components
+-   Fix prop drilling problem (great for layouts )
+
+Details in PDF
